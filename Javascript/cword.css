@@ -1,0 +1,73 @@
+.left15 {
+	font-size: 13px;
+	line-height: 18px;
+	color: #333333;
+	text-decoration: none;
+}
+.botton {
+	font-size: 12px;
+	border: 1px solid #666666;
+	background-color: #FFFFFF;
+	padding: 1px;
+	color: #666666;
+}
+
+.name15 {
+	font-size: 15px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+
+.left12 {
+	font-size: 12px;
+	line-height: 18px;
+	color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.white13 {
+	font-size: 13px;
+	line-height: 16px;
+	color: #FFFFFF;
+}
+.white12 {
+	font-size: 12px;
+	line-height: 16px;
+	color: #FFFFFF;
+}
+.underline {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dotted;
+	border-left-style: none;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+.blue12 {
+
+	font-size: 12px;
+	line-height: 18px;
+	color: #006699;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.inputbox {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+}
+.selectbox {
+	border: 1px none #666666;
+}
+body {
+	font-family:JhengHei,微軟正黑體,Arial, Apple LiGothic, Verdana,Sans-serif;
+}

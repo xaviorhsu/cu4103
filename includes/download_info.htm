@@ -1,0 +1,47 @@
+<!--  檔案下載 download_info.htm start --------------------------------------------------------------->
+<script type="text/javascript" src="../Javascript/jquery.min.js"></script>
+<script type="text/javascript" src="../Javascript/myJavascript.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript">
+function dn_Handle(fn)
+  {  OCR_window('O','../includes/dnldico_info.htm?../dnloads/'+fn,'立即下載確認',600,300); }
+$(document).ready(function()
+  {
+    $("#tbL1 thead tr").css({'background-color':'#996633','color':'white'});
+    $('#tbL1 tbody').css('color','brown');
+    $('#tbL1 tbody tr').mouseover(function(){$(this).css('background-color','#C0FFFF');});
+    $('#tbL1 tbody tr:even').css('background-color','#ffffff').mouseout(function(){$(this).css('background-color','#ffffff');});    
+    $('#tbL1 tbody tr:odd').css('background-color','#FFEFDF').mouseout(function(){$(this).css('background-color','#FFEFDF');});
+  });
+</script>
+<hr align="center" style="color: gray;" />
+<div>
+<table id="tbL1" width="100%" align="center" border="1"  cellpadding="0" cellspacing="0" style="border-color:white;font-size:smaller;">
+<thead>
+<tr><th width="14%" height="27">發佈時間</th><th width="76%">下載標題</th><th width="10%">發佈者</th></tr>
+</thead>
+<tbody>
+<tr><td align="center" height="27">2014-11-04</td>
+        <td><a onclick='dn_Handle("trnsrules1031104.doc");' href="javascript:;">轉社作業程序</a></td><td align="center">秀枝</td></tr>
+<tr><td align="center" height="27">2013-11-13</td>
+        <td><a onclick='dn_Handle("trnsapply1021113.doc");' href="javascript:;">轉社申請書</a></td><td align="center">秀枝</td></tr>
+<tr><td align="center" height="27">2013-06-19</td>
+        <td><a onclick='dn_Handle("2013SndNo0619.doc");' href="javascript:;">「102年青少年理財營(南區)」活動附件</a></td><td align="center">秀枝</td></tr>
+<tr><td align="center" height="27">2013-05-30</td>
+        <td><a onclick='dn_Handle("2013SndNo0530_1.doc");' href="javascript:;">日本家之光第21屆世界兒童繪畫比賽國內初賽甄選活動簡章暨作品資料表格</a></td><td align="center">秀枝</td></tr>
+<tr><td align="center" height="27">2013-04-21</td>
+        <td><a onclick='dn_Handle("Act0102.doc");' href="javascript:;">在台行腳系列─小撲滿築大夢故事徵文比賽活動辦法</a></td><td align="center">秀枝</td></tr>
+<tr><td align="center" height="27">2013-04-21</td>
+        <td><a onclick='dn_Handle("Act0101.doc");' href="javascript:;">在台行腳系列─老照片徵集活動辦法</a></td><td align="center">秀枝</td></tr>
+<tr><td align="center" height="27"></td>
+        <td><a onclick='' href=""></a></td><td align="center"></td></tr>
+<tr><td align="center" height="27"></td>
+        <td><a onclick='' href=''></a></td><td align="center"></td></tr>
+<tr><td align="center" height="27"></td>
+        <td><a onclick='' href=''></a></td><td align="center"></td></tr>
+<tr><td align="center" height="27"></td>
+        <td><a onclick='' href=''></a></td><td align="center"></td></tr>
+</tbody>
+</table>
+</div>
+
+<!--  檔案下載 download_info.htm end --------------------------------------------------------------->

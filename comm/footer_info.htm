@@ -1,0 +1,46 @@
+<!----------------------------------------------------- the footer_info -------------------------------------------------->
+<table align="center"  width="100%" border="0" cellspacing="0" cellpadding="0" >
+  <tr style="background:url(images/index_bottombg.gif);">
+    <!--<td width="230"><img src="http://websrv.local.tw/cu4103/images/index_bottom1.gif" width="230" height="100" />-->
+    <td width="230" height="100" align="center" style="background:url(images/index_bottom1.gif);background-repeat: no-repeat; background-position: center center;">
+<!-- 網站參訪人數 -->
+        <font color="#FFFFFF" style="font-size: 10pt;"><b>網站參訪人數</b><br/><br/>
+<!-- Start of webCounter Code -->
+        <b><span id="counters" style="font-family:Algerian; font-weight:bolder; color:#990000; background-color:#FFFFCC; border:4px double purple ">您是第　　　　位訪客</span></b>
+<!-- End of webCounter Code -->
+        </font> 
+<!--網站參訪人數.End-->
+    </td>
+    <td>
+            <div style="float:left;width:60%;">
+              台南市開山儲蓄互助社　台南市開山路195號　創社日期：民國59年8月15日<br/>
+              電　　話：06-2136892　 <a href='javascript:disp_handle("Rr","70",7,0);disp_handle("Bb","10",1,0);set_scrfile("SF1","includes/contactus_info.htm");activeItem("");' title="來信請寄dk410330@yahoo.com.tw"><u>聯 絡 我 們</u></a> | <!-- dk410330@yahoo.com.tw -->
+              <a href='javascript:disp_handle("Rr","70",7,0);disp_handle("Bb","10",1,0);set_scrfile("SF1","includes/copyright_info.htm");activeItem("");'><u>
+              著作權聲明</u></a>　 版權所有 &copy; 2012 / 12<br/>
+              請使用IE 6.x 以上版本 1024x768 解析度瀏灠較佳　Designed by─TKSSCU
+            </div>
+            <div style="float:left;width:19%;" title="儲蓄互助社手冊(全)-105年版">
+              <a href="dnloads/rules09.pdf" target="rules"><img src="images/image009.jpg" style="width:100%;height:40px;" border="1" /></a>
+            </div>
+            <div id="Fpic" style="float:right;width:19%;"><img src="images/image010.gif" style="width:100%;height:40px;color:#66FFFF;" border="1" /></div>
+    </td>
+    <td width="50" style="background:url(images/index_bottom2.gif);"></td>
+  </tr>
+</table>
+<script type="text/javascript" charset="utf-8">
+      //var url     = "http://"+HTTP_IP+"comm/gp_Ajax.php";
+      var url     = "http://"+HTTP_IP+"comm/gp_Ajax.php?js_cb=?";
+      var options = "opt=web_cnts";      
+      callAjaxDo("counters",'s',url,options);
+      
+      var current_pic=Math.floor(Math.random()*4);
+      str='<img src="images/image01'+current_pic+'.gif" style="width:100%;height:40px;color:#66FFFF;" border="1" />';
+      /*
+      var current_pic=Math.floor(Math.random()*3);
+      var pic_title =["『徵文比賽』與『老照片募集』活動","『世界兒童繪畫比賽國內初賽甄選』活動","『102年青少年理財營(南區)』活動"];
+      str='<a onclick=\'disp_handle("Rr",7,7,0);disp_handle("Bb",1,1,0);set_scrfile("SF1","dnloads/2013ActNo'+current_pic+'.pdf");\' href="javascript:;"><img src="images/Act0'+current_pic+'.jpg" width="228" height="40" border="1" style="color:#66FFFF;" title="'+pic_title[current_pic]+'" /></a>';
+      str='<a onclick=\'disp_handle("Rr",7,7,0);disp_handle("Bb",1,1,0);set_scrfile("SF1","dnloads/2013ActNo2.pdf");\' href="javascript:;"><img src="images/Act02.jpg" width="228" height="40" border="1" style="color:#66FFFF;" title="'+pic_title['2']+'" /></a>';
+      */
+      document.getElementById("Fpic").innerHTML=str;
+</script>
+<!----------------------------------------------------- footer_info end -------------------------------------------------->

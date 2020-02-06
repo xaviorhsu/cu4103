@@ -1,0 +1,62 @@
+<!--  代辦服務 dosrv_info.htm start --------------------------------------------------------------->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title></title>
+<script type="text/javascript" src="../Javascript/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+<!--
+$(document).ready(function()
+  {
+    $('img').css('border','4px solid purple')
+            .mouseover(function(){$(this).css('border-color','#FF6666');})
+            .mouseout(function(){$(this).css('border-color','purple');});
+  });
+// -->/
+function chkconf() {
+    var a= document.location.href; var n1=a.lastIndexOf('/'); var n2=a.substring(0,n1).lastIndexOf('/')+1;
+    if (a.substring(0,n2) == "http://websrv.local.tw/cu4103/") {
+    var whois=prompt("您是屬於那一號人物？","");  
+    if (whois!="4103") top.location="../index.html";                   
+    else { alert("本作業建置模擬測試中，協助測試時，\n如發現問題請告訴我們，感謝了！");            
+           //alert('<== '+a+" ==>");alert('<== '+n1+" ==>");alert('<== '+a.substring(0,n1)+" ==>"); alert('<== '+a.substring(0,n2)+" ==>"); 
+           top.location="../PF4103/veh1.html?cjo6="+a.substring(0,n2)+"index.html";}
+                   }
+    }
+        
+</script>
+</head>	
+<body>    
+ 
+<div align="center">
+  <h3 align="center" style="height:18px ;color:#CC6600;">^_^ 代辦服務項目一覽 ^_^</h3>
+  <table width="90%" align="center" border="1" bordercolor="purple" cellpadding="0" cellspacing="2" style="color:brown;">
+  <tbody align="center">
+  <tr><td>(汽/機)車險</td><td>(住/辦)火險</td><td>(個/團)傷險</td></tr>
+  <tr><td>旅平險</td><td>工程險</td><td>責任險</td></tr>
+  </tbody>
+  </table>  
+  <span id="Bys" style="color:darkblue;">如須服務請與社務 潘助理 秀枝 聯繫</span>
+  <hr />
+  <table width="100%" align="center" border="0"  cellpadding="0" cellspacing="0" style="color:black;">
+    <tr>
+        <td width="100%" align="center" height="180" >
+                      <!-- here is buyser-img change area -->
+        <div id="Dmg"><a href="javascript:chkconf();"> 
+        <!--<div id="Dmg"><a>-->
+        <img src="../images/buyveh.jpg" align="middle" width="440" height="120" title="進行汽、機車險線上投保作業"/>
+        </a></div>
+        <span style="color: red;">!!! 建置模擬測試中 !!!</span><br />(可直接進行汽、機車險線上投保作業)<br />
+                      <!-- here is buyser-img change area -->
+        <hr style="color: silver;" /> 
+        </td>
+   </tr>  
+  </table>
+  
+  <!--<div style="color:brown;"><span id="Bys">&nbsp;</span>如須服務請與社務 潘助理 秀枝 聯繫</div>-->
+</div>
+
+</body>
+</html>
+<!--  代辦服務 dosrv_info.htm end --------------------------------------------------------------->

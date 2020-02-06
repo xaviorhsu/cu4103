@@ -1,0 +1,87 @@
+<!----------------------------------------------------- the header_info -------------------------------------------------->
+<script language='JavaScript'>
+
+//-------- //lib 分析瀏覽器 ---------------------------------------------------------------------
+  var xmlHttp = null;
+	if (typeof XMLHttpRequest != "undefined"){
+    	//適用新版IE(6.0以後), Mozilla, Chrome, Safari, Opera....
+    	xmlHttp = new XMLHttpRequest();
+	}else if (typeof window.ActiveXObject != "undefined"){
+    	//除Microsoft.XMLHTTP使用在IE6(含)以前版本，其它都是用在較新版本
+    	var ax = new Array ("Msxml2.XMLHTTP.6.0", "Msxml2.XMLHTTP.5.0", "Msxml2.XMLHTTP.4.0","Msxml2.XMLHTTP.3.0",
+                          "Msxml2.XMLHTTP.2.6", "MSXML2.ServerXMLHTTP", "MSXML2.XMLHTTP","Microsoft.XMLHTTP");
+   		for (var i=0; i<ax.length; i++){
+        		try {		xmlHttp = new ActiveXObject(ax[i]);
+     				        if (typeof xmlHttp == "object") break;
+        		} catch (error)
+                    {	xmlHttp = null;	}
+    	}
+	}
+//-------	//設定回傳檔頭mime type格式 -----------------------------------------------------------
+	if (typeof xmlHttp.overrideMimeType != "undefined"){ xmlHttp.overrideMimeType("text/html; charset=utf-8"); }
+//-----------------------------------------------------------------------------------------------
+</script>
+<table style="border-color: inherit;" align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top"><td height="165" valign="top" background="images/index_topbg.gif">  
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="153" > 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+              <tr>                
+                <td colspan="3" height="15" bgcolor="#7F4F11"><img src="images/index_top1.gif" /><span id="Dd0"></span></td>
+              </tr>
+              <tr>
+                <td width="160" height="138" >                
+                <a href="index.html" onmouseover="var img=document['imgswap_logo'];img.imgRolln=img.src;img.src=img.lowsrc?img.lowsrc:img.getAttribute?img.getAttribute('lowsrc'):img.src;" onmouseout="document['imgswap_logo'].src=document['imgswap_logo'].imgRolln">
+                <img src="images/logo3a.jpg" border="2" style="border-color: purple;" width="95" height="80" align="right" alt="開山社首頁" title="台南開山社(cu4103)" id="imgswap_logo" name="imgswap_logo" dynamicanimation="imgswap_logo" lowsrc="images/logo3b.jpg"/>
+                </a></td>
+                <td width="470" height="138"> 
+                  <table border="0" cellspacing="0" cellpadding="0" align="center" >
+                    <tr>
+                      <!--<td width="95"><img src="images/3.gif" width="80" height="100" align="right"/></td>-->
+                      <td width="95">&nbsp;</td>
+                      <td width="380">
+                        <div align="center">
+                              <font size="6" color="#000033"><b>台南市開山儲蓄互助社</b></font><br />
+                              <font size="3" color="purple"><b>非為營利 非為救濟 乃是服務</b></font>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="300" valign="top" style="background-color:black;">                
+                <script type="text/javascript" charset="utf-8">
+                    yymmddcc=show_today();
+                    date='<b><font size="2">　民國'+(yymmddcc[0]-1911)+'年'+yymmddcc[2]+'月'+yymmddcc[3]+'日 星期'+yymmddcc[4]+'</font></b>';
+                    document.getElementById("Dd0").innerHTML=date;
+					var t; var curpno = 0;
+					var mon=(yymmddcc[2].toString().length==1)?"0"+yymmddcc[2].toString():yymmddcc[2].toString();
+					t = setInterval( mytime,5000);
+					function mytime(){
+					curpno++; if (curpno > 2) { curpno = 0; }
+					$("#Rpic").fadeOut(800,function()	
+						{	$("#Rpic").attr("src","images/Xpic/M"+mon+curpno.toString()+".jpg").fadeIn(300);	});
+					}				 
+                </script>
+                    <img id="Rpic" src="images/Xpic/M110.jpg" style="width:300px;height:136px;position:absolute;z-index:1;"/>
+                    <img src="images/index_toppic.gif" style="width:304px;height:138px;position:absolute;z-index:3;"/>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td height="12"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" background="images/index_topbottombg.gif">
+              <tr>
+                <td><img src="images/index_top3.gif" width="200" height="12"></td>
+                <td></td>
+                <td><div align="right"><img src="images/index_top4.gif" width="306" height="12"></div></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+  </td></tr>
+</table>
+<!----------------------------------------------------- header_info end -------------------------------------------------->
