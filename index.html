@@ -18,12 +18,11 @@
 <title>台南市開山儲蓄互助社-Welcome首頁</title>
 
 <!-- jQuery first,then bundle.js(, then Popper.js, then Bootstrap JS) -->
-<script src="../bootstrap/jquery-3.4.1.min.js"></script>
+<script src="Javascript/jquery.min.js"></script>
 <!-- bootstrap CSS 
 <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">   
 <script src="../bootstrap/bootstrap.bundle.min.js"></script>-->
 <style type="text/css">
-<!--
 #Bb0 #Rr7 #tdD0{
 		display: block;		
 	} 
@@ -37,7 +36,6 @@
 .style20 {font-size: 20px; font-family: "微軟正黑體", "新細明體"; font-weight: bold; color: #0099CC;}
 .style26 {font-size: 26px; font-family: "微軟正黑體", "新細明體"; font-weight: bold; color: #0099CC;}
 .style32 {font-size: 32px; font-family: "微軟正黑體", "新細明體"; font-weight: bold; color: #0099CC;}
--->
 </style>
 <!-- Optional JavaScript -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -45,8 +43,8 @@
 <link rel="stylesheet" type="text/css" href="Javascript/css.css" />
 <script type="text/javascript" src="Javascript/myJavascript.js" charset="utf-8"></script>
 <script type="text/javascript" language="javascript" charset="utf-8">
-//websrv.local.tw/114.33.140.96                 //tncath-d9g0.myweb.hinet.net
-var HTTP_IP=(location.hostname=="websrv.local.tw")?location.hostname+"/cu4103/PF4103/":"tncath.catholic.org.tw/";
+/* websrv.local.tw/                 xaviorhsu.github.io/ */
+var HTTP_IP=(location.hostname=="websrv.local.tw")?'http://websrv.local.tw/cu4103/PF4103/':'https://tncath.catholic.org.tw/';
 var winID=winID?winID:null;
 $(document).ready(function() {
     $('#tbs0 tbody tr font').mouseover(function(){$(this).css('color','#FFFF33')})
@@ -448,7 +446,7 @@ The URL was not found on the server. Error 404<br><img src="images/indicator.gif
                   <div style="float:right;margin-right:5;width:90%;">
                     <p style="background:url(images/Bt15.jpg);margin-top:0; background-repeat: no-repeat; background-position:center center;height: 40px;color:#CCFFFF;font-weight:bold;font-family:微軟正黑體,新細明體;font-size:14pt;">
                       <b>　協　　會</b></p>    <!-- /**  協會 url : www.culroc.org.tw IP : 61.221.52.220 **/ -->
-                    <a href="http://www.culroc.org.tw" target="mainFrame">
+                    <a href="http://www.culroc.org.tw/" target="mainFrame">
                       <img border="1" src="images/culrocmark.gif" style="background-color: white;" width="99%" height="98" title="協會官網連結" /></a><br /><br />
                      <!--<a href='javascript:disp_handle("Rr","30",9,1);disp_handle("Bb","10",1,0);set_scrfile("SF1","images/yearlisth107.pdf");' style="border:4px double purple; background-color:#FF0066;color:#FFFF00; font-weight:bold;font-family:微軟正黑體,新細明體;font-size:10pt;" title="協會行事曆連結">協會年度行事曆</a>-->
                      <a href='javascript:OCR_window("O","https://drive.google.com/file/d/16w75B1vpF3SlF3DoM__RiuCaICRMnmv1/view?usp=sharing","new_page",705,500);' style="border:4px double purple; background-color:#FF0066;color:#FFFF00; font-weight:bold;font-family:微軟正黑體,新細明體;font-size:10pt;" title="協會行事曆連結">協會年度行事曆</a>
