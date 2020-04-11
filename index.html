@@ -4,8 +4,8 @@
 <head>
 <!--CharSet /webcu4103/-->
 <meta charset="utf-8" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Language" content="zh-TW" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">  
 <meta name="robots" content="index,follow" />
 <meta name="Googlebot" content="index,follow">
 <meta name="author" content="TKSSCU" />
@@ -14,8 +14,14 @@
 <meta name="copyright" content="Copyright © 2013-" />
 <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
-<link rel="stylesheet" type="text/css" href="Javascript/css.css" />
+
 <title>台南市開山儲蓄互助社-Welcome首頁</title>
+
+<!-- jQuery first,then bundle.js(, then Popper.js, then Bootstrap JS) -->
+<script src="../bootstrap/jquery-3.4.1.min.js"></script>
+<!-- bootstrap CSS 
+<link rel="stylesheet" href="../bootstrap/bootstrap.min.css">   
+<script src="../bootstrap/bootstrap.bundle.min.js"></script>-->
 <style type="text/css">
 <!--
 #Bb0 #Rr7 #tdD0{
@@ -33,14 +39,10 @@
 .style32 {font-size: 32px; font-family: "微軟正黑體", "新細明體"; font-weight: bold; color: #0099CC;}
 -->
 </style>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<!--<script type="text/javascript" src="Javascript/jquery.min.js"></script>-->
-<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
-<script type="text/javascript" charset="utf-8">
-try{var _hinet = parent.document.getElementsByTagName("frameset");for(var i=0;i<_hinet.length;i++){_hinet[i].cols="*,0";}}
-catch(err){}
-$(parent.document.getElementById("adpage")).remove();
-</script>
+<!-- Optional JavaScript -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.youtube.com/player_api"></script>
+<link rel="stylesheet" type="text/css" href="Javascript/css.css" />
 <script type="text/javascript" src="Javascript/myJavascript.js" charset="utf-8"></script>
 <script type="text/javascript" language="javascript" charset="utf-8">
 //websrv.local.tw/114.33.140.96                 //tncath-d9g0.myweb.hinet.net
@@ -48,8 +50,7 @@ var HTTP_IP=(location.hostname=="websrv.local.tw")?location.hostname+"/cu4103/PF
 var winID=winID?winID:null;
 $(document).ready(function() {
     $('#tbs0 tbody tr font').mouseover(function(){$(this).css('color','#FFFF33')})
-                            .mouseout(function(){$(this).css('color','#00FFCC')});
-    
+                            .mouseout(function(){$(this).css('color','#00FFCC')});    
     $("#tbm0 div:not(:eq(9))").click(function(){ activeItem(this); });					
 });
 // ----------------------------------------------------------------------------------- //
@@ -529,4 +530,3 @@ The URL was not found on the server. Error 404<br><img src="images/indicator.gif
 </body>
 </html>
 <!-- index.html end ------------------------------------------------------------------------------------------------->
-<noscript>
